@@ -1,0 +1,12 @@
+
+Jump cursor to
+``````````````
+H  move cursor to Top
+L  move cursor to bottom
+
+
+Pan
+```
+z<CR>    pan current line to top screen
+zz z.    pan current line to middle of screen
+z-       pan current line to bottom of screen

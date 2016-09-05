@@ -1,0 +1,4 @@
+Listing as tree
+
+npm -ls --depth 0   #list install module in current dir
+
