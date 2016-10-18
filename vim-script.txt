@@ -1,0 +1,18 @@
+
+Load vimrc
+``````````
+    :source $MYVIMRC
+    ref:
+        http://superuser.com/questions/286985/reload-vimrc-in-vim-without-restart
+
+Echo variable
+`````````````
+    :echom $MYVAR
+    :echo $MYVAR
+
+Run a function
+``````````````
+    :call MyFunction()
+
+
+
