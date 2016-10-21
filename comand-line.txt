@@ -1,4 +1,31 @@
 Listing as tree
+```````````````
 
-npm -ls --depth 0   #list install module in current dir
+    npm -ls --depth 0   #list install module in current dir
+
+
+
+Create relative symlink directory
+`````````````````````````````````
+    1. go to the directory you want the link-dir to reside in
+    2. ln -s ../some/other/sourceDir/  linkedDir
+       or
+       ln -s ../some/other/sourceDir  linkedDir
+
+       but not
+           ln -s ../some/other/sourceDir  linkedDir/
+
+       very useful:
+           ln -s ../node_modules node_modules
+
+
+Create absolute symlink file
+````````````````````````````
+    1. go to the directory you want the link to reside in
+    2. ln -s ~/path/to/sourcefile.js
+
+    If the link file name is different from source file:
+    2. ln -s ~/path/to/sourceFile.js linkedFile.js
+
+
 

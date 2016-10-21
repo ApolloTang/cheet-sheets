@@ -1,5 +1,5 @@
 
-npm init -y # -y generates *package.json*, skip for more control
+npm init -y       # -y generates *package.json*, skip for more control
 
 npm i webpack -D  # i=install -D=--save-dev
 
