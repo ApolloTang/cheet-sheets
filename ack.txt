@@ -1,0 +1,7 @@
+
+$ ack '<perl-pattern>'
+    eg:  $ ack '\brequire\b'
+
+$ echo 'getItem\('\''SIDEBAR_TABS'\''\)'
+getItem\('SIDEBAR_TABS'\)
+

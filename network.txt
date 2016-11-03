@@ -1,0 +1,16 @@
+
+To figure out the ip of your machine
+````````````````````````````````````
+
+    Unix:
+        ifconfig | grep inet.
+    Window:
+        ipconfig
+
+To verify a port has been taken
+```````````````````````````````
+    netstat -na | grep 8080.
+    # If there’s something running in the port 8080, it should display a message.
+
+    or https://www.npmjs.com/package/node-ip
+

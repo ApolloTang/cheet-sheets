@@ -19,6 +19,7 @@ Create relative symlink directory
            ln -s ../node_modules node_modules
 
 
+
 Create absolute symlink file
 ````````````````````````````
     1. go to the directory you want the link to reside in
@@ -28,4 +29,22 @@ Create absolute symlink file
     2. ln -s ~/path/to/sourceFile.js linkedFile.js
 
 
+
+Copy folder with symbolic content
+`````````````````````````````````
+  • Copy folder and its contents, if the content is a symbolic
+    link, do not dereference:
+  • If the folder source/ is a symbolic link dereference
+    the folder:
+
+        cp -R -H source/ dest/
+
+
+  • Copy folder and its contents, if the content is a symbolic link
+    dereference it by copy the content the reference point to:
+
+        cp -R -L source/ dest/
+
+    Ref:
+    http://superuser.com/questions/593196/cp-h-vs-cp-l-what-is-a-command-line-symbolic-link
 

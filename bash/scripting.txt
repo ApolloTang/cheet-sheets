@@ -1,0 +1,3 @@
+
+MY_VAR=SOME_VALUE my-script.sh  #setting scope of variable for a script
+
