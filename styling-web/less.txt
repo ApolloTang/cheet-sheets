@@ -1,1 +1,10 @@
- width: calc(~"100% - "@icon-width);
+less syntex with calc
+`````````````````````
+    width: calc(~"100% - "@icon-width);
+    width: calc(~"100% - 200px");
+
+    ref: [1]
+
+--------------------------
+
+[1] http://stackoverflow.com/questions/11972084/less-aggressive-compilation-with-css3-calc?noredirect=1&lq=1

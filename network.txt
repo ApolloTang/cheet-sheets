@@ -14,3 +14,17 @@ To verify a port has been taken
 
     or https://www.npmjs.com/package/node-ip
 
+Find the process id tie to particular port
+```````````````````````````````````````````
+
+    The PID is the second field in the output.
+        $ lsof -n -i4TCP:8080
+
+    Or try:
+        $lsof -i -P
+
+    [1]
+
+----------------------------------------------------
+[1] http://stackoverflow.com/questions/24387451/how-can-i-kill-whatever-process-is-using-port-8080-so-that-i-can-vagrant-up
+

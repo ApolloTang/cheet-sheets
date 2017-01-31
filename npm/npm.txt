@@ -3,5 +3,23 @@ npm init -y       # -y generates *package.json*, skip for more control
 
 npm i webpack -D  # i=install -D=--save-dev
 
+show distribution:
+``````````````````
+    $ npm view webpack dist-tags
+    { latest: '1.12.9', beta: '2.0.1-beta' }
 
+    $ npm view webpack versions
+        [ '0.1.0',
+          '0.1.1',
+          ···
+          '1.12.8',
+          '1.12.9',
+          '2.0.0-beta',
+          '2.0.1-beta' ]
 
+    $ npm view webpack
+
+    [1]
+
+--------------------------------------------
+[1] http://www.2ality.com/2015/12/npm-install-tag-version.html

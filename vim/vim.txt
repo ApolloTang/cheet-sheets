@@ -10,3 +10,15 @@ Pan
 z<CR>    pan current line to top screen
 zz z.    pan current line to middle of screen
 z-       pan current line to bottom of screen
+
+
+List matches
+````````````
+:global/regular-expression/print
+:g/regEx/p
+
+[1]
+
+------------------------------------------------
+
+[1] http://stackoverflow.com/questions/509690/how-can-you-list-the-matches-of-vims-search
