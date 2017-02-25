@@ -1,0 +1,8 @@
+
+
+Delete all hidden buffer:
+    :call DeleteHiddenBuffers()
+
+
+Close buffer without change layout:
+    Alias: <leader>cc

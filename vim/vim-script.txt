@@ -1,7 +1,7 @@
 
 Load vimrc
 ``````````
-    :source $MYVIMRC
+    :source $MYVIMRC   (alias: <leader>ev)
     ref:
         http://superuser.com/questions/286985/reload-vimrc-in-vim-without-restart
 

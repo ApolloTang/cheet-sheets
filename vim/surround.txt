@@ -1,5 +1,10 @@
-to remove block comment
-```````````````````````
+
+Remove inline block comment
+```````````````````````````
+
     /* some text */  <-- this is a block comment
 
     in normal mode type: ds/
+
+
+

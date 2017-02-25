@@ -1,0 +1,21 @@
+
+
+NerdTree:
+
+    About preview window:
+        The last active window is the preview window
+        Type 'go' on NERDTree entry to open it in preview window
+        Use '<leader>N' to jump to preview window.
+
+    Open item in preview window (cursor remain in NERDTree):
+        'go'
+
+    Jump to preview and open selection in preview window.
+        'o'
+
+    Jump to an new vsplit with selected item in new window.
+        'gs'
+
+
+
+

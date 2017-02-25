@@ -1,23 +1,25 @@
 
+
 Jump cursor to
 ``````````````
-H  move cursor to Top
-L  move cursor to bottom
+    H  move cursor to top of viewport
+    M  move cursor to middle of viewport
+    L  move cursor to bottom of viewport
 
 
 Pan
 ```
-z<CR>    pan current line to top screen
-zz z.    pan current line to middle of screen
-z-       pan current line to bottom of screen
+    z<CR>    pan current line to top screen
+    zz z.    pan current line to middle of screen
+    z-       pan current line to bottom of screen
 
 
 List matches
 ````````````
-:global/regular-expression/print
-:g/regEx/p
+    :global/regular-expression/print
+    :g/regEx/p
 
-[1]
+    [1]
 
 ------------------------------------------------
 
