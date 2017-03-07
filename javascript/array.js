@@ -9,11 +9,12 @@ will modify the original array:
 
 
 Copying array:
+``````````````
 
     using slice (all 3 syntex are equivalent):
         myArray_copy = Array.prototype.slice.call(myArray);
         myArray_copy = [].slice.call(myArray);
-        myArray_copy = myArray.slice();
+        myArray_copy = myArray.slice(myArray);
 
     using concat:
         myArray_copy = Array.proptotype.concat.call(myArray);
@@ -21,7 +22,56 @@ Copying array:
 
 
 
+Return portion of array (non mutation):
+````````````````````````````````````````
+    a = [0,1,2,3,4];
+    b = a.slice(1,2);  // return element of index 1 to 2-1
 
+    a // [0,1,2,3,4]  original array not altered
+    b // [1]
+
+
+Remove an element by index from array (non mutation):
+``````````````````````````````````````````````````````
+
+    a = [0,1,2,3,4];
+
+    // to remove element '2' (index 1)
+    a_ = a.slice(0,2).concat( a.slice(3,5) );
+    //   ^^^^^^^^^^^^         ^^^^^^^^^^^^
+    //   [0,1]                [3,4]
+
+    a  // [0,1,2,3,4]  original array not altered
+    a_ // [0,1,3,4]
+
+    ES6 syntax:
+    ``````````
+    a_ = [
+        ...a.slice(0,2),
+        ...a.slice(3,5)
+    ];
+
+
+Alter an element by index in an array (non mutation):
+``````````````````````````````````````````````````````
+
+    a = [0,1,2,3,4];
+
+    // to alter 2 to 'two' (index 1)
+
+    a_ = a.slice(0,2).concat('two').concat(a.slice(3,5));
+
+    a  // [0,1,2,3,4]  original arry not altered
+    a_ // [0,1,'two',3,4]
+
+    ES6 syntax:
+    ``````````
+
+    a_ = [
+        ...a.slice(0,2),
+        'two',
+        ...a.slice(3,5)
+    ];
 
 
 
