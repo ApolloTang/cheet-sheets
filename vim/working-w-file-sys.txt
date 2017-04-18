@@ -1,0 +1,22 @@
+
+Insert current working director into document
+`````````````````````````````````````````````
+    r ! pwd   # Linux
+    r ! cd    # Dos
+
+
+Insert current/path/to/filename.ext into document
+``````````````````````````````````````````````````
+    insert mode: <c-R> %
+
+Save current path/to/filename into register
+```````````````````````````````````````````
+
+    :let @" = expand("%")      # copy current/path/file.name to unamed register
+    :let @" = expand("%:p")    # copy full/path/file.name to unamed register
+    :let @" = expand("%:p:h")  # copy full/path to unamed register
+
+
+[1] http://stackoverflow.com/questions/916875/yank-file-name-path-of-current-buffer-in-vim/37192216#37192216
+
+

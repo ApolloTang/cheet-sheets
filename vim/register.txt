@@ -1,0 +1,9 @@
+
+
+Copy one register to another
+````````````````````````````
+    :let @a=@b
+    :let @a=@"
+
+ref:
+http://stackoverflow.com/questions/1497958/how-do-i-use-vim-registers

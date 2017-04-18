@@ -1,0 +1,15 @@
+
+Echo Far current search path
+````````````````````````````
+
+    echo g:far#cwd
+
+
+Set Far current search path to present working dir
+```````````````````````````````````````````````````
+
+    :let g:far#cwd = system('cd')
+    :let g:far#cwd = system('pwd')
+
+
+
