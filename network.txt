@@ -7,6 +7,17 @@ To figure out the ip of your machine
     Window:
         ipconfig
 
+    Better solution for Mac/Unix:
+
+      ifconfig | grep "inet " | grep -v 127.0.0.1[2]
+
+      The command removes the 127.0.0.1 entry, which will always appear regardless
+      of the machine you are using. This is the feedback loop
+      and can be ignored when looking for the IP address.
+
+      [2]
+
+
 To verify a port has been taken
 ```````````````````````````````
     netstat -na | grep 8080.
@@ -27,4 +38,4 @@ Find the process id tie to particular port
 
 ----------------------------------------------------
 [1] http://stackoverflow.com/questions/24387451/how-can-i-kill-whatever-process-is-using-port-8080-so-that-i-can-vagrant-up
-
+[2] http://www.wikihow.com/Find-Your-IP-Address-on-a-Mac
