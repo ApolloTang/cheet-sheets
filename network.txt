@@ -9,7 +9,7 @@ To figure out the ip of your machine
 
     Better solution for Mac/Unix:
 
-      ifconfig | grep "inet " | grep -v 127.0.0.1[2]
+      ifconfig | grep "inet " | grep -v 127.0.0.1
 
       The command removes the 127.0.0.1 entry, which will always appear regardless
       of the machine you are using. This is the feedback loop

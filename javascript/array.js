@@ -74,5 +74,7 @@ Alter an element by index in an array (non mutation):
     ];
 
 
-
-
+Check if a variable is type array
+``````````````````````````````````
+  Object.prototype.toString.call( [] )  // '[object Array]'
+  Array.isArray([])  // true
