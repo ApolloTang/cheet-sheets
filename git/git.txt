@@ -12,6 +12,7 @@ tag
     git tag <tagName>          # create a tag on current branch
     git push origin <tagName>  # push a tag to origin
     git push origin --tags     # push all tags to origin
+    git co tags/<tagName>      # check out a tag
 
     ref: [2] http://stackoverflow.com/questions/18216991/create-a-tag-in-github-repository
 
