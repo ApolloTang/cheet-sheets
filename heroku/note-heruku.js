@@ -33,6 +33,9 @@ $ heroku config:set {VARIABLE-NAME}=2    // set a variable on heroku
 
 $ heroku config          // print out configuration variable
 
+$ heroku app             // list app
+
+$ heroku domains         // show app domain link
 
 
 

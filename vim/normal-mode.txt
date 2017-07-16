@@ -1,0 +1,12 @@
+
+
+:execute "normal! <sequence of commands>"
+
+The above run the sequence of commands as if there were entered
+in normal mode, ignoring all mappings, and replacing string escape
+sequences with their results. [1]
+
+
+---------------
+
+[1] http://learnvimscriptthehardway.stevelosh.com/chapters/30.html
