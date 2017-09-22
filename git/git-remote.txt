@@ -1,0 +1,26 @@
+
+Determine the URL that a local Git repository was originally cloned from
+
+
+
+  There are at least four ways:
+
+    Least information:
+
+      $ git config --get remote.origin.url      // If referential integrity has been broken
+      $ git ls-remote --get-url
+
+
+    More information:
+
+      $ git remote -v
+
+    Even more information:
+
+      $ git remote show origin                  // If referential integrity is intact
+
+
+  https://stackoverflow.com/a/23682620/3136861
+  https://stackoverflow.com/questions/171550/find-out-which-remote-branch-a-local-branch-is-tracking/40630957#40630957
+
+
