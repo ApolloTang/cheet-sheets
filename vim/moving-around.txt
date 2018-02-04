@@ -1,23 +1,53 @@
 
+::: Pan
 
-Pan
+  (n)zt         " Pan current line to top of screen
+  (n)zz         " Pan current line to middle of screen
+  (n)zb         " Pan current line to top of screen
 
-  (n)z.         " Pan current line to middle of screen
-  (n)z<return>  " Pan current line to top of screen
-  (n)z-         " Pan current line to top of screen
 
-Move cursor to:
+::: Move cursor to:
 
   (n)H          " move cursor to top of page
   (n)M          " move cursor to mid of page
   (n)L          " move cursor to botton of page
 
-Move something to current cursor position:
+
+::: Move something to current cursor position:
 
   (n)<c-D>      " move next half a page to current curson position
   (n)<c-U>      " move previous  a page to current curson position
 
 
+::: Line
+
+    begining/end of a line
+         0   /   $
+
+    first/last charecter of a line
+         ^   /   g_
+
+
+::: Screen line
+
+    go to the end of screen line
+        g$
+
+
+::: word
+
+    begining of word (next/previous)
+         w W  /  b B                <--- lower case ignore punctuation
+
+    end of word (next/previous)
+         e E  /  ge gE              <--- lower case ignore punctuation
+
+
+::: Document
+
+    first/last line of document
+         1G  /  G
+         gg  /  G
 
 
 

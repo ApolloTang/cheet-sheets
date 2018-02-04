@@ -1,6 +1,5 @@
 
-To figure out the ip of your machine
-````````````````````````````````````
+::: To figure out the ip of your machine
 
     Unix:
         ifconfig | grep inet.
@@ -15,18 +14,14 @@ To figure out the ip of your machine
       of the machine you are using. This is the feedback loop
       and can be ignored when looking for the IP address.
 
-      [2]
 
+::: To verify a port has been taken
 
-To verify a port has been taken
-```````````````````````````````
     netstat -na | grep 8080.
     # If there’s something running in the port 8080, it should display a message.
 
-    or https://www.npmjs.com/package/node-ip
 
-Find the process id tie to particular port
-```````````````````````````````````````````
+::: Find the process id tie to particular port
 
     The PID is the second field in the output.
         $ lsof -n -i4TCP:8080
@@ -34,8 +29,3 @@ Find the process id tie to particular port
     Or try:
         $lsof -i -P
 
-    [1]
-
-----------------------------------------------------
-[1] http://stackoverflow.com/questions/24387451/how-can-i-kill-whatever-process-is-using-port-8080-so-that-i-can-vagrant-up
-[2] http://www.wikihow.com/Find-Your-IP-Address-on-a-Mac
