@@ -14,7 +14,11 @@ tag
     git push origin --tags     # push all tags to origin
     git co tags/<tagName>      # check out a tag
 
-    ref: [2] http://stackoverflow.com/questions/18216991/create-a-tag-in-github-repository
+    git tag -d <tagName>       # delete a local tag
+    git tag --delete origin <tagname> # delete a remote tag
+
+    ref: [2]  http://stackoverflow.com/questions/18216991/create-a-tag-in-github-repository
+    ref: [2b] https://stackoverflow.com/questions/5480258/how-to-delete-a-git-remote-tag
 
 configuration
 `````````````
